@@ -34,3 +34,20 @@ UPDATE => 데이터 수정
 ex. UPDATE Customers SET CustomerName = ‘teddy’, City = ‘서울’,
     Country = ‘선계’ WHERE CustomerID = 1; (커스토머아이디가 1인 데이터 수정)
 *****치명적실수조심 (WHERE 없이 업데이트하면 모든데이터가 다 바뀜)*****
+
+###
+DELETE => 데이터 삭제
+ex. DELETE FROM Customers WHERE Country = ‘Germany’
+(컨트리가 절메니인 데이터 삭제)
+*****치명적실수조심 (WHERE 없이 삭제하면 모든데이터가 다 삭제됨)*****
+
+####
+자주사용하는 명령어 
+CREATE DATABASE sampledata_db;( 데이터베이스 생성 )
+CREATE TABLE sampledata_table;   ( 테이블 생성 )
+DROP DATABASE sampledata_db;    ( 데이터베이스 삭제 )
+DROP TABLE sampledata_table;	( 테이블 삭제 )
+
+SHOW databases; 	( 모든 데이터베이스 조회 )
+SHOW tables;   		( 모든 테이블 조회 )
+DESC table_name; 	(모든테이블 정렬)
