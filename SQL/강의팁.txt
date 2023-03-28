@@ -1,0 +1,34 @@
+기본 구조 ***SELECT 필드이름
+     	   FROM 테이블 ***
+DISTINCT => 중복제거
+ORDER BY (PK명) DESC => 내림차순 정렬
+ORDER BY (PK명) ASC => 오름차순 정렬
+AS => 테이블명
+% => 나머지 연산자
+|| => 한번에 조회하는 연산자 (공백추가는 || ‘ ‘ || 이런식으로 문자열로 추가)
+TRUE => 1, FALSE => 0
+True and False = False => and는 곱
+True or False = True => or은 합
+not True = False => not은 반대
+LIKE ‘_1’ => 앞에 한자리와1이 있는 것들 조회
+LIKE ‘1_’ => 뒤에 한자리와1이 있는 것들 조회
+LIKE ‘__1’ => 앞에 두자리와1이 있는 것들 조회
+LIKE ‘1__’ => 뒤에 두자리와1이 있는 것들 조회
+LIKE ‘%1%’ => 1을 포함한 모든 문자 조회
+
+SELECT CustomersID FROM Customers WHERE CustomerID > 80;
+위 sql문처럼 WHERE 구문을 사용하면 80초과에서 조회가 된다.
+
+AND 연산자는 앞뒤 둘다 해당하는 데이터만 조회,
+OR 연산자는 앞에도 해당되고 뒤에도 해당하는 데이터를 조회(범위가 넓음)
+!= 를 사용하면 반대되는 모든데이터 조회
+
+#
+INSERT INTO => 데이터 추가
+ex. INSERT INTO Customers (CustomerName, City, Country)
+    VALUES ( ‘teddy’, ‘jejusi’, ‘korea’ )
+
+##
+UPDATE => 데이터 수정
+ex. UPDATE Customers SET CustomerName = ‘teddy’, City = ‘서울’,
+    Country = ‘선계’ WHERE CustomerID = 1; (커스토머아이디가 1인 데이터 수정)
