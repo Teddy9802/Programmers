@@ -22,6 +22,7 @@ SELECT CustomersID FROM Customers WHERE CustomerID > 80;
 AND 연산자는 앞뒤 둘다 해당하는 데이터만 조회,
 OR 연산자는 앞에도 해당되고 뒤에도 해당하는 데이터를 조회(범위가 넓음)
 != 를 사용하면 반대되는 모든데이터 조회
+(and는 연달아 사용가능)
 
 #
 INSERT INTO => 데이터 추가
@@ -32,3 +33,4 @@ ex. INSERT INTO Customers (CustomerName, City, Country)
 UPDATE => 데이터 수정
 ex. UPDATE Customers SET CustomerName = ‘teddy’, City = ‘서울’,
     Country = ‘선계’ WHERE CustomerID = 1; (커스토머아이디가 1인 데이터 수정)
+*****치명적실수조심 (WHERE 없이 업데이트하면 모든데이터가 다 바뀜)*****
