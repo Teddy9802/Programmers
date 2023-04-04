@@ -22,7 +22,7 @@ function solution(n) {
     return answer
 }
 
-# 고수의 풀이 (while문)
+# 고수의 풀이
 function nextSqaure(n){
   return n.toString()
           .split('')
